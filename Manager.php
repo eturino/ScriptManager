@@ -54,7 +54,7 @@ class EtuDev_ScriptManager_Manager {
 		}
 		$l = $this->getEffectiveLevel($level, $block);
 
-		$this->scripts_by_level[$l][] = array('s' => $scriptname);
+		$this->scripts_by_level[$l][] = array('s' => json_encode($scriptname));
 		return $this;
 	}
 
