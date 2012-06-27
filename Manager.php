@@ -89,17 +89,17 @@ class EtuDev_ScriptManager_Manager {
 
 	public function renderRunCurrentBlock() {
 		$lvls = $this->getCurrentBlockScripts();
-		$h = '';
+		$h    = '';
 		if ($lvls) {
 			foreach ($lvls as $lkey => $scripts) {
-				if($scripts){
+				if ($scripts) {
 					foreach ($scripts as $s) {
-						if($s['f']){
+						if ($s['f']) {
 							$method = 'addFunctionToLevel';
-							$param = $s['f'];
+							$param  = $s['f'];
 						} else {
 							$method = 'addScriptToLevel';
-							$param = $s['s'];
+							$param  = $s['s'];
 						}
 						$h .= "ScriptManager.getInstance().$method($param,$lkey); \n";
 					}
@@ -110,6 +110,15 @@ class EtuDev_ScriptManager_Manager {
 		$this->current_block += 100;
 		$cb = $this->current_block;
 		$h .= "ScriptManager.getInstance().setCounterRun($cb); \n";
+		return $h;
+	}
+
+	public function renderRunCurrentBlockWithScriptTag() {
+		$h = $this->renderRunCurrentBlock();
+		if ($h) {
+			$h = '<script type="text/javascript">' . $h . '</script>';
+		}
+
 		return $h;
 	}
 }
