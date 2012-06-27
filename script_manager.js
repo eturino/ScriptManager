@@ -53,7 +53,11 @@ ScriptManager.prototype.addFunctionToLevel = function (script, level) {
 	}
 
 	this.levels[level].push(function () {
-		script();
+		try{
+			script();
+		}catch(ex){
+
+		}
 	});
 	return this;
 };
