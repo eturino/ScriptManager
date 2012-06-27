@@ -1,6 +1,6 @@
 <?php
 
-class EtuDev_ScriptManager {
+class EtuDev_ScriptManager_Manager {
 
 	const BLOCK_HEAD         = 0;
 	const BLOCK_FOOTER       = 100;
@@ -22,7 +22,7 @@ class EtuDev_ScriptManager {
 	const LEVEL_END_AFTER       = 14;
 
 	/**
-	 * @var EtuDev_ScriptManager
+	 * @var EtuDev_ScriptManager_Manager
 	 */
 	static protected $instance;
 
