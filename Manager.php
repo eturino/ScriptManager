@@ -108,7 +108,7 @@ class EtuDev_ScriptManager_Manager {
 							$method = 'addScriptToLevel';
 							$param  = $s['s'];
 						}
-						$h .= "ScriptManager.getInstance().$method($param,$lkey); \n";
+						$h .= "ScriptManager.getInstance().$method($param,$lkey, true); \n";
 					}
 					$h .= "ScriptManager.getInstance().runLevel($lkey); \n";
 				}

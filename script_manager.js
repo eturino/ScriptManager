@@ -55,12 +55,18 @@ ScriptManager.getInstance = function () {
  * @param script
  * @return ScriptManager
  */
-ScriptManager.prototype.addFunctionToLevel = function (script, level) {
-	if (!this.levels[level]) {
-		this.levels[level] = [];
+ScriptManager.prototype.addFunctionToLevel = function (script, level, ignore_counter_run) {
+	ignore_counter_run = ignore_counter_run || false;
+	var eflev = level;
+	if(!ignore_counter_run){
+		eflev = level + this.counter_run;
 	}
 
-	this.levels[level].push(function () {
+	if (!this.levels[eflev]) {
+		this.levels[eflev] = [];
+	}
+
+	this.levels[eflev].push(function () {
 		try{
 			script();
 		}catch(ex){
@@ -76,8 +82,13 @@ ScriptManager.prototype.addFunctionToLevel = function (script, level) {
  * @param script
  * @return ScriptManager
  */
-ScriptManager.prototype.addScriptToLevel = function (script, level) {
-	var eflev = level + this.counter_run;
+ScriptManager.prototype.addScriptToLevel = function (script, level, ignore_counter_run) {
+	ignore_counter_run = ignore_counter_run || false;
+	var eflev = level;
+	if(!ignore_counter_run){
+		eflev = level + this.counter_run;
+	}
+
 	if (!this.levels[eflev]) {
 		this.levels[eflev] = [];
 	}
