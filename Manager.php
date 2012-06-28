@@ -128,4 +128,17 @@ class EtuDev_ScriptManager_Manager {
 
 		return $h;
 	}
+
+	public function renderRunAll() {
+		return 'ScriptManager.getInstance().runChain();';
+	}
+
+	public function renderRunAllWithScriptTag() {
+		$h = $this->renderRunAll();
+		if ($h) {
+			$h = '<script type="text/javascript">' . $h . '</script>';
+		}
+
+		return $h;
+	}
 }
