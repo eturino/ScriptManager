@@ -6,20 +6,27 @@ class EtuDev_ScriptManager_Manager {
 	const BLOCK_FOOTER       = 100;
 	const BLOCK_AFTER_FOOTER = 200;
 
-	const LEVEL_INMEDIATE       = 1;
-	const LEVEL_INMEDIATE_AFTER = 2;
-	const LEVEL_HIGHEST         = 3;
-	const LEVEL_HIGHEST_AFTER   = 4;
-	const LEVEL_HIGH            = 5;
-	const LEVEL_HIGH_AFTER      = 6;
-	const LEVEL_MEDIUM          = 7;
-	const LEVEL_MEDIUM_AFTER    = 8;
-	const LEVEL_LOW             = 9;
-	const LEVEL_LOW_AFTER       = 10;
-	const LEVEL_LOWEST          = 11;
-	const LEVEL_LOWEST_AFTER    = 12;
-	const LEVEL_END             = 13;
-	const LEVEL_END_AFTER       = 14;
+	const LEVEL_INMEDIATE_BEFORE = 1;
+	const LEVEL_INMEDIATE        = 2;
+	const LEVEL_INMEDIATE_AFTER  = 3;
+	const LEVEL_HIGHEST_BEFORE   = 4;
+	const LEVEL_HIGHEST          = 5;
+	const LEVEL_HIGHEST_AFTER    = 6;
+	const LEVEL_HIGH_BEFORE      = 7;
+	const LEVEL_HIGH             = 8;
+	const LEVEL_HIGH_AFTER       = 9;
+	const LEVEL_MEDIUM_BEFORE    = 10;
+	const LEVEL_MEDIUM           = 11;
+	const LEVEL_MEDIUM_AFTER     = 12;
+	const LEVEL_LOW_BEFORE       = 13;
+	const LEVEL_LOW              = 14;
+	const LEVEL_LOW_AFTER        = 15;
+	const LEVEL_LOWEST_BEFORE    = 16;
+	const LEVEL_LOWEST           = 17;
+	const LEVEL_LOWEST_AFTER     = 18;
+	const LEVEL_END_BEFORE       = 19;
+	const LEVEL_END              = 20;
+	const LEVEL_END_AFTER        = 21;
 
 	/**
 	 * @var EtuDev_ScriptManager_Manager

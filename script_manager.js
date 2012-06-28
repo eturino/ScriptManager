@@ -13,20 +13,28 @@ ScriptManager.BLOCK_HEADER = 0;
 ScriptManager.BLOCK_FOOTER = 100;
 ScriptManager.BLOCK_AFTER_FOOTER = 200;
 
-ScriptManager.LEVEL_INMEDIATE = 1;
-ScriptManager.LEVEL_INMEDIATE_AFTER = 2;
-ScriptManager.LEVEL_HIGHEST = 3;
-ScriptManager.LEVEL_HIGHEST_AFTER = 4;
-ScriptManager.LEVEL_HIGH = 5;
-ScriptManager.LEVEL_HIGH_AFTER = 6;
-ScriptManager.LEVEL_MEDIUM = 7;
-ScriptManager.LEVEL_MEDIUM_AFTER = 8;
-ScriptManager.LEVEL_LOW = 9;
-ScriptManager.LEVEL_LOW_AFTER = 10;
-ScriptManager.LEVEL_LOWEST = 11;
-ScriptManager.LEVEL_LOWEST_AFTER = 12;
-ScriptManager.LEVEL_END = 13;
-ScriptManager.LEVEL_END_AFTER = 14;
+
+ScriptManager.LEVEL_INMEDIATE_BEFORE = 1;
+ScriptManager.LEVEL_INMEDIATE        = 2;
+ScriptManager.LEVEL_INMEDIATE_AFTER  = 3;
+ScriptManager.LEVEL_HIGHEST_BEFORE   = 4;
+ScriptManager.LEVEL_HIGHEST          = 5;
+ScriptManager.LEVEL_HIGHEST_AFTER    = 6;
+ScriptManager.LEVEL_HIGH_BEFORE      = 7;
+ScriptManager.LEVEL_HIGH             = 8;
+ScriptManager.LEVEL_HIGH_AFTER       = 9;
+ScriptManager.LEVEL_MEDIUM_BEFORE    = 10;
+ScriptManager.LEVEL_MEDIUM           = 11;
+ScriptManager.LEVEL_MEDIUM_AFTER     = 12;
+ScriptManager.LEVEL_LOW_BEFORE       = 13;
+ScriptManager.LEVEL_LOW              = 14;
+ScriptManager.LEVEL_LOW_AFTER        = 15;
+ScriptManager.LEVEL_LOWEST_BEFORE    = 16;
+ScriptManager.LEVEL_LOWEST           = 17;
+ScriptManager.LEVEL_LOWEST_AFTER     = 18;
+ScriptManager.LEVEL_END_BEFORE       = 19;
+ScriptManager.LEVEL_END              = 20;
+ScriptManager.LEVEL_END_AFTER        = 21;
 
 /**
  * returns the singleton ScriptManager
